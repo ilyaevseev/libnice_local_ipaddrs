@@ -1,6 +1,8 @@
 /* print_local_ipaddrs.c */
 
 #include <nice/interfaces.h>
+#include <string.h>  /* strchr */
+#include <stdlib.h>  /* getenv */
 
 GList *nice_interfaces_get_local_ips(gboolean include_loopback)
 {
